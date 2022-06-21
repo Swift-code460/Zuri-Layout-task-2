@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../images/bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  height: 50vh;
+  width: 100%;
+  padding: 64px;
+  margin: 16px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.wrapper, .text-wrapper  {
+  flex-grow: 1;
+  
+  
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  margin-top: 48px;
+  padding-top: 64px;
+}
+.text-wrapper p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.wrapper .card-title {
+  background-color: hsl(248, 32%, 49%);
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.card-title > span {
+  color: white;
+  font-weight: bold;
+}
+
+.form-card { 
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+  
+  }
+.form-card p {
+    color: hsl(246, 25%, 77%);
+    font-size: 8px;
+    text-align: center;
+    padding: 16px;
+    margin: 4px;
+ }
+a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
+
+
+.input {
+  background-color: inherit;
+  color: hsl(249, 10%, 26%);
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 16px;
+  width: 100%;
+  margin-block-end: 15px;
+}
+
+.input::placeholder { color: inherit; }
+
+.btn-submit {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+/***---- Layout for Mobile  device      ---***/
+@media only screen and (max-width:  700px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url('../images/bg-intro-mobile.png');
+    background-size: cover;
+    height: auto;
+  }
+  .container {
+    flex-direction: column;
+    padding: 16px;
+    margin: 8px;
+    gap: 16px;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    width: inherit;
+    
+  }
+  .text-wrapper {
+    margin: 16px;
+    text-align: center;
+  }
+  .form-card {
+    padding: 16px;
+  }
+  .form-card p  {
+    padding: 8px;
+    margin: 4px;
+    text-align: center;
+  }
+  .btn-submit {
+    font-size: 16px;
+  }
+}
